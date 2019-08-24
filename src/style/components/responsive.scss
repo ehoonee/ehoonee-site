@@ -11,13 +11,15 @@
 }
 
 @media screen and (max-width: 450px){
+    .container{
+        margin: 0 20px;
+    }
+
     .navbar .navbar-right{
         display: none;
     }
-}
 
-@media screen and (max-width: 350px){
-    .navbar .navbar-left li {
-        margin-right: 12px;
+    .navbar {
+        margin-right: 1px;
     }
 }

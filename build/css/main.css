@@ -20,6 +20,25 @@
   min-width: auto; }
   .container.container-min {
     max-width: 1040px; }
+  .container.container-stretch {
+    max-width: 1040px; }
+
+.heading {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  width: 550px; }
+  .heading h1 {
+    font-family: "FormularBold";
+    font-size: 72px;
+    line-height: 76px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF; }
+  .heading p {
+    font-family: "FormularRegular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #A6A7A9;
+    margin-top: 50px; }
 
 .navbar {
   display: -ms-flexbox;
@@ -29,6 +48,7 @@
   -ms-flex-align: center;
       align-items: center;
   height: 58px;
+  min-width: 280px;
   font-family: "Rogan";
   font-size: 12px;
   line-height: 14px;
@@ -68,9 +88,9 @@
     margin-right: 30px; } }
 
 @media screen and (max-width: 450px) {
+  .container {
+    margin: 0 20px; }
   .navbar .navbar-right {
-    display: none; } }
-
-@media screen and (max-width: 350px) {
-  .navbar .navbar-left li {
-    margin-right: 12px; } }
+    display: none; }
+  .navbar {
+    margin-right: 1px; } }

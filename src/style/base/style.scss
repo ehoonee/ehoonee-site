@@ -10,4 +10,29 @@
     &.container-min{
         max-width: 1040px;
     }
+    &.container-stretch{
+        max-width: 1040px;;
+    }
+}
+
+.heading{
+    margin-top: 140px;
+    margin-bottom: 140px;
+    width: 550px;
+
+    h1{
+        font-family: $bold-text;
+        font-size: 72px;
+        line-height: 76px;
+        letter-spacing: -0.05em;
+        color: $white;
+    }
+
+    p{
+        font-family: $regular-text;
+        font-size: 14px;
+        line-height: 24px;
+        color: #A6A7A9;
+        margin-top: 50px;
+    }
 }
