@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.container{
+    margin: 0 auto;
+    min-width: auto;
+    &.container-min{
+        max-width: 1040px;
+    }
+}

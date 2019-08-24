@@ -1,0 +1,23 @@
+@media screen and (max-width: 1090px) {
+    .container{
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navbar-left li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navbar .navbar-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .navbar .navbar-left li {
+        margin-right: 12px;
+    }
+}

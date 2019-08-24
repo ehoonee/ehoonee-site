@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+
+    font-family: $styled-text;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+
+    .navbar-left{
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            a{
+                text-decoration: none;
+                color: $white;
+                transition: all 0.3s;
+                &:hover{
+                    color: $rose;
+                }
+            }
+        }
+    }
+
+    .navbar-right{
+        li{
+            display: inline-block;
+            margin-left: 10px;
+
+            svg{
+                width: 18px;
+                height: 18px;
+                transition: all 0.3s;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+
+

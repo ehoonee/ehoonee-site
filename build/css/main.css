@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Rogan';
+  src: url("../../fonts/Rogan.otf"); }
+
+@font-face {
+  font-family: 'FormularRegular';
+  src: url("../../fonts/Formular-Regular.otf"); }
+
+@font-face {
+  font-family: 'FormularBold';
+  src: url("../../fonts/Formular-Bold.otf"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+.container {
+  margin: 0 auto;
+  min-width: auto; }
+  .container.container-min {
+    max-width: 1040px; }
+
+.navbar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 58px;
+  font-family: "Rogan";
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box; }
+  .navbar .navbar-left li {
+    display: inline-block;
+    margin-right: 40px; }
+    .navbar .navbar-left li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: all 0.3s; }
+      .navbar .navbar-left li a:hover {
+        color: #FF668B; }
+  .navbar .navbar-right li {
+    display: inline-block;
+    margin-left: 10px; }
+    .navbar .navbar-right li svg {
+      width: 18px;
+      height: 18px;
+      transition: all 0.3s; }
+      .navbar .navbar-right li svg:hover {
+        opacity: 0.6; }
+
+.home-page {
+  min-height: 100vh;
+  background-color: #131313; }
+
+@media screen and (max-width: 1090px) {
+  .container {
+    margin: 0 50px; } }
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar-left li {
+    margin-right: 30px; } }
+
+@media screen and (max-width: 450px) {
+  .navbar .navbar-right {
+    display: none; } }
+
+@media screen and (max-width: 350px) {
+  .navbar .navbar-left li {
+    margin-right: 12px; } }
