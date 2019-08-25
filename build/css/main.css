@@ -25,7 +25,7 @@
 
 .heading {
   margin-top: 140px;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
   width: 550px; }
   .heading h1 {
     font-family: "FormularBold";
@@ -73,19 +73,99 @@
       height: 18px;
       transition: all 0.3s; }
       .navbar .navbar-right li svg:hover {
-        opacity: 0.6; }
+        opacity: 0.8; }
 
 .home-page {
+  width: 100%;
   min-height: 100vh;
   background-color: #131313; }
+  .home-page .container-stretch {
+    overflow: hidden; }
+    .home-page .container-stretch .works {
+      margin: 0 -50px;
+      font-size: 0; }
+      .home-page .container-stretch .works a {
+        display: inline-block;
+        position: relative;
+        width: calc(50% - 100px);
+        height: 480px;
+        background-size: cover;
+        list-style-type: none;
+        margin: 50px 50px;
+        overflow: hidden; }
+        .home-page .container-stretch .works a img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: auto;
+          width: 180px;
+          transition: all 0.3s;
+          transition-timing-function: cubic-bezier(0.66, 0.15, 0.41, 1); }
+        .home-page .container-stretch .works a .info {
+          position: absolute;
+          bottom: -200px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-align: center;
+              align-items: center;
+          background-color: #212121;
+          width: 100%;
+          padding: 30px 0;
+          border-top: 1px solid black;
+          transition: all 0.3s;
+          transition-timing-function: cubic-bezier(0.66, 0.15, 0.41, 1); }
+          .home-page .container-stretch .works a .info .info-left {
+            margin-left: 30px; }
+            .home-page .container-stretch .works a .info .info-left p {
+              font-family: "Rogan";
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #FFFFFF; }
+            .home-page .container-stretch .works a .info .info-left h3 {
+              margin-top: 5px;
+              font-family: "FormularBold";
+              font-size: 22px;
+              line-height: 26px;
+              letter-spacing: -0.05em;
+              color: #FFFFFF; }
+          .home-page .container-stretch .works a .info .info-right {
+            margin-right: 30px; }
+            .home-page .container-stretch .works a .info .info-right svg {
+              width: 11px;
+              height: 9px; }
+        .home-page .container-stretch .works a:nth-child(odd) {
+          transform: translateY(50px); }
+        .home-page .container-stretch .works a:hover .info {
+          bottom: 0px; }
+        .home-page .container-stretch .works a:hover img {
+          top: 42%; }
 
 @media screen and (max-width: 1090px) {
   .container {
-    margin: 0 50px; } }
+    margin: 0 50px; }
+  .home-page .container-stretch {
+    margin: 0 50px; }
+    .home-page .container-stretch .works a {
+      width: calc(50% - 40px);
+      height: 380px;
+      margin: 20px 20px; } }
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-left li {
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .heading {
+    width: 360px;
+    margin-top: 100px; }
+    .heading h1 {
+      font-size: 38px;
+      line-height: 42px; }
+    .heading p {
+      margin-top: 30px; } }
 
 @media screen and (max-width: 450px) {
   .container {
@@ -93,4 +173,6 @@
   .navbar .navbar-right {
     display: none; }
   .navbar {
-    margin-right: 1px; } }
+    margin-right: 1px; }
+  .heading {
+    width: auto; } }
