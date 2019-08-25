@@ -3,6 +3,7 @@
         margin: 0 50px;
         &.container-stretch{
             margin: 0 50px;
+            min-width: 320px;
         }
     }
 
@@ -29,9 +30,12 @@
     .home-page{
         .container-stretch{
             .works{
+                margin: 0px;
+
                 a{
                     display: block;
                     width: 100%;
+                    margin: 10px 0;
 
                     &:nth-child(odd){
                         transform: translateY(0px);
@@ -58,6 +62,8 @@
             margin-top: 30px;
         }
     }
+
+    
 }
 
 @media screen and (max-width: 450px){

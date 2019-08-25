@@ -7,9 +7,11 @@
         //width: 100%;
         overflow: hidden;
 
+
         .works{
             margin: 0 -50px;
             font-size: 0;
+            padding-bottom: 50px;
 
             a{
                 display: inline-block;
@@ -71,7 +73,7 @@
 
                         svg{
                             width: 11px;
-                            height: 9px;;
+                            height: 9px;
                         }
                     }
                 }
@@ -87,6 +89,33 @@
                 }
                 
             }
+        }
+    }
+
+    .home-contacts{
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 250px;
+
+         a{
+            font-family: $bold-text;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            color: $rose;
+            text-decoration: none;
+            
+
+            svg{
+                width: 11px;
+                height: 9px;
+                margin-left: 7px;
+                margin-bottom: 2px;
+            }
+         }
+         a:hover{
+            text-decoration: underline;
         }
     }
 }
