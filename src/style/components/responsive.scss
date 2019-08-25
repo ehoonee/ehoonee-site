@@ -48,22 +48,32 @@
     .container.container-stretch{
         margin: 0;
     }
+    .container{
+        .heading{
+            width: 360px;
+            margin-top: 100px;
 
-    .heading{
-        width: 360px;
-        margin-top: 100px;
+            h1{
+                font-size: 38px;
+                line-height: 42px;
+                img{
+                    display: block;
+                    width: 38px;
+                    height: 38px;
+                    margin-bottom: 20px;
+                }
+            }
 
-        h1{
-            font-size: 38px;
-            line-height: 42px;
-        }
-
-        p{
-            margin-top: 30px;
+            p{
+                margin-top: 30px;
+            }
         }
     }
-
     
+    .about-page{
+        height: 100%;
+        min-height: 100vh;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -79,7 +89,9 @@
         margin-right: 1px;
     }
 
-    .heading{
-        width: auto;
+    .container{   
+        .heading{
+            width: auto;
+        }
     }
 }
