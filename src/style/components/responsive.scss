@@ -1,14 +1,15 @@
 @media screen and (max-width: 1090px) {
     .container{
         margin: 0 50px;
+        &.container-stretch{
+            margin: 0 50px;
+        }
     }
 
     .home-page{
         .container-stretch{
-            margin: 0 50px;
-
             .works{
-               //margin: 0 -40px;
+               margin: 0 -20px; 
 
                 a{
                     width: calc(50% - 40px);
@@ -23,6 +24,25 @@
 @media screen and (max-width: 768px) {
     .navbar .navbar-left li {
         margin-right: 30px;
+    }
+
+    .home-page{
+        .container-stretch{
+            .works{
+                a{
+                    display: block;
+                    width: 100%;
+
+                    &:nth-child(odd){
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+
+    .container.container-stretch{
+        margin: 0;
     }
 
     .heading{

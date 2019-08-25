@@ -148,8 +148,10 @@
 @media screen and (max-width: 1090px) {
   .container {
     margin: 0 50px; }
-  .home-page .container-stretch {
-    margin: 0 50px; }
+    .container.container-stretch {
+      margin: 0 50px; }
+  .home-page .container-stretch .works {
+    margin: 0 -20px; }
     .home-page .container-stretch .works a {
       width: calc(50% - 40px);
       height: 380px;
@@ -158,6 +160,13 @@
 @media screen and (max-width: 768px) {
   .navbar .navbar-left li {
     margin-right: 30px; }
+  .home-page .container-stretch .works a {
+    display: block;
+    width: 100%; }
+    .home-page .container-stretch .works a:nth-child(odd) {
+      transform: translateY(0px); }
+  .container.container-stretch {
+    margin: 0; }
   .heading {
     width: 360px;
     margin-top: 100px; }
