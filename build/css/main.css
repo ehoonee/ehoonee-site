@@ -247,7 +247,10 @@
   margin-top: 40px; }
 
 .case .container .container-stretch {
-  padding-top: 20px; }
+  padding-top: 20px;
+  max-width: 1040px; }
+  .case .container .container-stretch img {
+    width: 100%; }
 
 .case .heading {
   margin-top: 60px;
