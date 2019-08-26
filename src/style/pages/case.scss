@@ -24,12 +24,13 @@
     }
 
     .container{
-        .container-stretch{
+        &.container-stretch{
             padding-top: 20px;
             max-width: 1040px;
 
             img{
                 width: 100%;
+                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15); 
             }
         }
     }
