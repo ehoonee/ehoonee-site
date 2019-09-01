@@ -69,6 +69,10 @@
                 color: #1769FF;
             }
 
+            &.bad{
+                color: #8B8B8B;
+            }
+
             svg{
                 width: 18px;
                 height: 18px;
@@ -82,7 +86,6 @@
 
     .container.container-stretch{
         margin-bottom: 150px;
-        overflow: hidden;
 
         .category{
             max-width: 440px;
@@ -108,6 +111,10 @@
             width: 100%;
             box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
             margin-bottom: 60px;
+
+            &.non-shadow{
+                box-shadow: none;
+            }
         }
 
         .grid-2-col{
@@ -135,4 +142,173 @@
         }
     }
 
+    .next{
+        margin-top: 300px;
+        padding-bottom: 300px;
+        text-align: center;
+        
+        p{
+            font-family: $styled-text;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #323238;
+            margin-bottom: 20px;
+        }
+
+        a{
+            font-family: $bold-text;
+            font-size: 72px;
+            line-height: 76px;
+            text-align: center;
+            letter-spacing: -0.05em;
+            color: #000000;
+            transition: all 0.3s;
+            text-decoration: none;
+
+            &:hover{
+                color: $rose;
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+    .paycake{
+        background: #212121;
+
+        .navbar{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+            .navbar-left{
+                li{
+                    a{
+                        color: $white;
+    
+                        &:hover{
+                            color: $rose;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container.container-min{
+            .heading{
+                h1{
+                    color: #58A3F8;
+                }
+
+                p{
+                    color: white;
+                }
+
+                .tag{
+                    color: white;
+                }
+            }
+
+            .next{
+                p{
+                    color: white;
+                }
+
+                a{
+                    color: white;
+
+                    &:hover{
+                        color: $rose;
+                    }
+                }
+            }
+        }
+
+        .container.container-stretch{
+            h4{
+                color: white;
+            }
+
+            p{
+                color: white;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .gfs{
+        background: #0A1E3D;
+
+        .navbar{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+            .navbar-left{
+                li{
+                    a{
+                        color: $white;
+    
+                        &:hover{
+                            color: $rose;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container.container-min{
+            .heading{
+                h1{
+                    color: #D13B32;
+                }
+
+                p{
+                    color: white;
+                }
+
+                .tag{
+                    color: white;
+                }
+            }
+
+            .next{
+                p{
+                    color: white;
+                }
+
+                a{
+                    color: white;
+
+                    &:hover{
+                        color: $rose;
+                    }
+                }
+            }
+        }
+
+        .container.container-stretch{
+            h4{
+                color: white;
+            }
+
+            p{
+                color: white;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .concepts{
+        .container.container-min{
+            .next{
+                a{
+                    color: #1769FF;
+
+                    &:hover{
+                        color: $rose;
+                    }
+                }
+            }
+        }
+    }
 }

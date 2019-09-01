@@ -40,6 +40,17 @@
         margin-right: 30px;
     }
 
+    .case{
+        .container.container-stretch{
+            .grid-3-col{
+                margin: 0;
+                .col{
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+
     .home-page{
         .container-stretch{
             .works{
@@ -78,7 +89,7 @@
 
     .container.container-stretch{
         margin: 0;
-
+        
         .category{
             margin: 0 50px;
             width: auto;
@@ -126,10 +137,21 @@
     .container{
         margin: 0 20px;
     }
+    
 
     .case{
         .container.container-stretch{
             margin-bottom: 100px;
+
+            .grid-3-col{
+                display: block;
+                margin: 0 30px;
+                
+                .col{
+                    margin: 0;
+                    width: 100%;
+                }
+            }
 
             .category{
                 margin: 0 20px 60px 20px;
