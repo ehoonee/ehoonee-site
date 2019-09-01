@@ -23,6 +23,14 @@
                 margin: 50px 50px;
                 overflow: hidden;
 
+                &#concepts{
+                    background-image: url(../../img/cases/concepts/case.png);
+
+                    &:hover{
+                        background-image: url(../../img/cases/concepts/caseHover.png);
+                    }
+                }
+
                 img{
                     position: absolute;
                     top: 50%;

@@ -22,6 +22,8 @@
     max-width: 1040px; }
   .container.container-stretch {
     max-width: 1040px; }
+  .container.container-max {
+    width: auto; }
 
 .heading {
   margin-top: 140px;
@@ -95,6 +97,10 @@
         list-style-type: none;
         margin: 50px 50px;
         overflow: hidden; }
+        .home-page .container-stretch .works a#concepts {
+          background-image: url(../../img/cases/concepts/case.png); }
+          .home-page .container-stretch .works a#concepts:hover {
+            background-image: url(../../img/cases/concepts/caseHover.png); }
         .home-page .container-stretch .works a img {
           position: absolute;
           top: 50%;
@@ -246,15 +252,9 @@
   height: 9px;
   margin-top: 40px; }
 
-.case .container.container-stretch {
-  padding-top: 20px;
-  max-width: 1040px; }
-  .case .container.container-stretch img {
-    width: 100%;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15); }
-
 .case .heading {
   margin-top: 60px;
+  margin-bottom: 100px;
   width: 450px; }
   .case .heading .tag {
     display: block;
@@ -294,6 +294,46 @@
     .case .heading a span {
       margin: 3px 0px 0px 10px; }
 
+.case .container.container-stretch {
+  margin-bottom: 150px; }
+  .case .container.container-stretch .category {
+    max-width: 440px;
+    margin-bottom: 60px; }
+    .case .container.container-stretch .category h4 {
+      font-family: "FormularRegular";
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: -0.05em;
+      color: #000000;
+      margin-bottom: 20px; }
+    .case .container.container-stretch .category p {
+      font-family: "FormularRegular";
+      font-size: 14px;
+      line-height: 24px;
+      color: #6F6F6F; }
+  .case .container.container-stretch img {
+    width: 100%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: 60px; }
+  .case .container.container-stretch .grid-2-col {
+    font-size: 0;
+    margin: 0 -50px;
+    display: -ms-flexbox;
+    display: flex; }
+    .case .container.container-stretch .grid-2-col img {
+      width: calc(50% - 100px);
+      height: 100%;
+      margin: 0 50px; }
+  .case .container.container-stretch .grid-3-col {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0;
+    margin: 0 -50px; }
+    .case .container.container-stretch .grid-3-col .col {
+      margin: 0 50px;
+      width: calc(33% - 100px);
+      height: 100%; }
+
 @media screen and (max-width: 1090px) {
   .container {
     margin: 0 50px; }
@@ -305,7 +345,17 @@
     .home-page .container-stretch .works a {
       width: calc(50% - 40px);
       height: 380px;
-      margin: 20px 20px; } }
+      margin: 20px 20px; }
+  .case .container.container-stretch .grid-2-col {
+    margin: 0 -20px; }
+    .case .container.container-stretch .grid-2-col img {
+      width: calc(50% - 40px);
+      margin: 0 20px; }
+  .case .container.container-stretch .grid-3-col {
+    margin: 0 -20px; }
+    .case .container.container-stretch .grid-3-col .col {
+      width: calc(33% - 40px);
+      margin: 0 20px; } }
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-left li {
@@ -318,8 +368,23 @@
       margin: 10px 0; }
       .home-page .container-stretch .works a:nth-child(odd) {
         transform: translateY(0px); }
+  .case .container.container-stretch .grid-2-col {
+    display: block;
+    width: 100%;
+    margin: 0; }
+    .case .container.container-stretch .grid-2-col img {
+      width: 100%;
+      margin: 0px 0px 60px 0px; }
+  .case .container.container-stretch .grid-3-col {
+    margin: 0 -10px; }
+    .case .container.container-stretch .grid-3-col .col {
+      width: calc(33% - 20px);
+      margin: 0 10px; }
   .container.container-stretch {
     margin: 0; }
+    .container.container-stretch .category {
+      margin: 0 50px;
+      width: auto; }
   .container .heading {
     width: 360px;
     margin-top: 100px; }
@@ -345,6 +410,10 @@
 @media screen and (max-width: 450px) {
   .container {
     margin: 0 20px; }
+  .case .container.container-stretch {
+    margin-bottom: 100px; }
+    .case .container.container-stretch .category {
+      margin: 0 20px 60px 20px; }
   .navbar .navbar-right {
     display: none; }
   .navbar {

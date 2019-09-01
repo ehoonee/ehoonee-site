@@ -13,6 +13,9 @@
     &.container-stretch{
         max-width: 1040px;;
     }
+    &.container-max{
+        width: auto;
+    }
 }
 
 .heading{
