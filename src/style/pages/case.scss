@@ -50,6 +50,26 @@
             margin-bottom: 50px;
         }
 
+        .bad{
+            color: #8B8B8B;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 50px;
+            text-decoration: none;
+            font-family: $bold-text;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: -0.05em;
+            svg{
+                width: 18px;
+                height: 18px;
+            }
+
+            span{
+                margin: 3px 0px 0px 10px;
+            }
+        }
+
         a{
             display: inline-flex;
             align-items: center;
@@ -67,10 +87,6 @@
 
             &.behance{
                 color: #1769FF;
-            }
-
-            &.bad{
-                color: #8B8B8B;
             }
 
             svg{
